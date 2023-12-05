@@ -1,1 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
+@import "assets/scss/custom-style";
+
+// Override Bootstrap Card Styles
+.card,
+.card-body,
+.card-title,
+.card-text,
+.card-header,
+.card-header:first-child,
+.card-footer {
+  border-radius: 0; // Set border radius to 0
+}
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}

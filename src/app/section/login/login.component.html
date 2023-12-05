@@ -1,0 +1,32 @@
+<div class="card">
+
+    <!-- Header section of card -->
+    <div class="card-header">
+        <h1>Login Page</h1>
+    </div>
+
+    <!-- Body Of card -->
+    <div class="card-body">
+
+        <!-- Email Id -->
+        <div class="mt-2">
+            <input type="email" [formControl]="email" class="form-control" placeholder="Enter your email id">
+            <label *ngIf="email.invalid" style="color:red">Please enter valid email id</label>
+        </div>
+
+        <!-- Password -->
+        <div class="mt-2">
+            <input type="password" [formControl]="password" class="form-control" placeholder="Enter your password">
+            <label *ngIf="password.invalid" style="color:red">Password is required</label>
+        </div>
+
+    </div>
+
+
+    <!-- Footer section of card -->
+    <div class="card-footer">
+        <button class="btn btn-primary" (click)="getFormsValue()">Login</button>
+        <button class="btn btn-warning" routerLink="/registration">Register</button>
+    </div>
+
+</div>
